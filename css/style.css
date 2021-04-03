@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: url("../img/1244788.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.admin-btn{
+    position:absolute;
+    top: 15px;
+    left: 10px;
+    
+}
+.admin-btn>button{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 14px;
+    cursor: pointer;
+}
+.admin-btn>button:hover{
+    background-color: rgb(0, 92, 0);
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+}
+.logo>img{
+    width: 150px;
+    height: 130px;
+    border-radius: 100%;
+}
+.secenekler{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    margin-top: 70px;
+}
+.secenekler>h3{
+    cursor: pointer;
+}
+.register{
+    background-color: rgba(39, 39, 146, 0.5);
+    border:2px solid #272792;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+.login{
+    background-color: rgba(0, 128, 0, 0.5);
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px solid green;
+}
+.login:hover{
+    background-color: rgb(0, 94, 0);
+}
+.register:hover{
+    background-color: rgb(26, 26, 117);
+}
+
+.inputs{
+    outline: none;
+    border: 2px solid white;
+    padding: 15px 20px;
+    padding-left: 60px;
+    border-radius: 15px;
+    margin: 10px 0px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: darkred;
+    position: relative;
+
+}
+.inputs:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.lbl-user,.lbl-password,.lbl-kod{
+    color: white;
+    font-size: 1.5rem;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.giris-btn{
+    width: 400px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.giris-btn:active{
+    background-color: rgba(255, 255, 255, 0.7);
+    color: darkred;
+}
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.hata{
+    border: 2px solid red;
+    padding: 15px 15px;
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(139, 0, 0, 0.4);
+    position: absolute;
+    top: 160px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.basarili{
+    border: 2px solid green;
+    padding: 15px 15px;
+    width: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 128, 0, 0.404);
+    position: absolute;
+    top: 160px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}

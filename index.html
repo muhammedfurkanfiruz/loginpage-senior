@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <div class="admin-btn">
+        <button><a href="/views/adminGirisi.html" style="color: white; text-decoration: none;">Admin Girişi</a></button>
+    </div>
+    <div class="section">
+        <div class="section-logo">
+            <div class="logo">
+                <img src="/img/unnamed.png" alt="">
+            </div>
+        </div>
+        <div class="hata" style="top: 130px;">
+            <p>Bilgileriniz Yanlıştır</p>
+        </div>
+        <div class="basarili" style="top: 130px;">
+            <p>Giriş Başarılı</p>
+        </div>
+        <div class="section-inputs">  
+            <div class="secenekler">
+                <h3 class="login">Login</h3>
+                <h3 class="register"><a style="color: white; text-decoration: none;" href="/views/kayitOl.html">Register</a></h3>
+            </div>   
+            <div class="inputlar">
+                <div class="uyelik">
+                    <label class="lbl-user" for="userEmail"><i class="fas fa-envelope"></i></label>
+                    <input class="inputs" id="email" type="email" name="userEmail" placeholder="E-Mail Giriniz">
+                </div>
+                <div class="kod">
+                    <label class="lbl-kod" for="userKod"><i class="fas fa-fingerprint"></i></label>
+                    <input class="inputs" id="idNumber" type="email" name="userKod" placeholder="Üyelik Numaranızı Giriniz">
+                </div>
+                <div class="pass">
+                    <label class="lbl-password" for="password"><i class="fas fa-lock"></i></label>
+                    <input class="inputs" id="password" type="password" name="password" placeholder="Şifrenizi Giriniz">
+                </div>
+            </div>
+            <div class="btns">
+                <button class="giris-btn">Giriş Yap</button>
+            </div>
+            <br>
+            <p>Do you forgot your password? <b><a style="color:white" href="">Click Here</a></b></p>
+        </div>
+    </div>
+    
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
